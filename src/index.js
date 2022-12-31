@@ -9,7 +9,7 @@ const setupAndStartServer = () => {
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use('/api', apiRoutes);
     app.listen(PORT, () => {
-        console.log("Server is running on port", PORT);
+        console.log("Server is running at port", PORT);
     });
 
     if (process.env.DB_SYNC) {
